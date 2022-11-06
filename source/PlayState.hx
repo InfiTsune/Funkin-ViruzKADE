@@ -2405,13 +2405,14 @@ class PlayState extends MusicBeatState
 				});
 			}
 
-			if (boyfriend.holdTimer > Conductor.stepCrochet * 4 * 0.001 && !up && !down && !right && !left)
-			{
-				if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
-				{
-					boyfriend.playAnim('idle');
-				}
-			}
+			// lol de la nada me marca error xdxdxddddxdddzxxx
+			// if (boyfriend.holdTimer > Conductor.stepCrochet * 4 * 0.001 && !up && !down && !right && !left)
+			// {
+			// 	if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+			// 	{
+			// 		boyfriend.playAnim('idle');
+			// 	}
+			// }
 	
 			playerStrums.forEach(function(spr:FlxSprite)
 			{
