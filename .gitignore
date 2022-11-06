@@ -4,5 +4,7 @@ art/build_x32-officialrelease.bat
 art/build_x64-officialrelease.bat
 art/test_x64-debug-officialrelease.bat
 
+Rogelio_Assets.gif
+
 source/gamejolt/GJKeys.hx 
 # hehe
