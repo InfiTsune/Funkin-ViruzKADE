@@ -80,7 +80,8 @@ class PlayState extends MusicBeatState
 
 	private var dad:Character;
 	private var gf:Character;
-	public static var boyfriend:Boyfriend;
+	private var boyfriend:Boyfriend;
+	public static var boyfriendSelected:String;
 
 	private var notes:FlxTypedGroup<Note>;
 	private var unspawnNotes:Array<Note> = [];
@@ -677,9 +678,13 @@ class PlayState extends MusicBeatState
 		}
 
 
-		if (boyfriend != null)
+		if (boyfriendSelected == null)
 		{
 			boyfriend = new Boyfriend(770, 450, SONG.player1);
+		}
+		else
+		{
+			boyfriend = new Boyfriend(770, 450, boyfriendSelected);
 		}
 
 		// REPOSITIONING PER STAGE
@@ -1938,7 +1943,7 @@ class PlayState extends MusicBeatState
 			if (noteDiff > Conductor.safeZoneOffset * 2)
 				{
 					daRating = 'shit';
-					totalNotesHit = 0;
+					totalNotesHit += 0;
 					ss = false;
 					if (theFunne)
 						{
@@ -1952,7 +1957,7 @@ class PlayState extends MusicBeatState
 				else if (noteDiff < Conductor.safeZoneOffset * -2)
 				{
 					daRating = 'shit';
-					totalNotesHit = 0;
+					totalNotesHit += 0;
 					if (theFunne)
 					{
 						score = 0;
@@ -1966,7 +1971,7 @@ class PlayState extends MusicBeatState
 				else if (noteDiff < Conductor.safeZoneOffset * -0.45)
 				{
 					daRating = 'bad';
-					totalNotesHit += 0.45;
+					totalNotesHit += 45;
 					if (theFunne)
 					{
 						score = 125;
@@ -1980,7 +1985,7 @@ class PlayState extends MusicBeatState
 				else if (noteDiff > Conductor.safeZoneOffset * 0.45)
 				{
 					daRating = 'bad';
-					totalNotesHit += 0.45;
+					totalNotesHit += 45;
 					if (theFunne)
 						{
 							score = 125;
@@ -1994,7 +1999,7 @@ class PlayState extends MusicBeatState
 				else if (noteDiff < Conductor.safeZoneOffset * -0.25)
 				{
 					daRating = 'good';
-					totalNotesHit += 0.85;
+					totalNotesHit += 85;
 					if (theFunne)
 					{
 						score = 200;
@@ -2008,7 +2013,7 @@ class PlayState extends MusicBeatState
 				else if (noteDiff > Conductor.safeZoneOffset * 0.25)
 				{
 					daRating = 'good';
-					totalNotesHit += 0.85;
+					totalNotesHit += 85;
 					if (theFunne)
 						{
 							score = 200;
@@ -2021,7 +2026,7 @@ class PlayState extends MusicBeatState
 				}
 			if (daRating == 'sick')
 			{
-				totalNotesHit += 1;
+				totalNotesHit += 100;
 				if (health < 2)
 					health += 0.1;
 				sicks++;
@@ -2405,14 +2410,13 @@ class PlayState extends MusicBeatState
 				});
 			}
 
-			// lol de la nada me marca error xdxdxddddxdddzxxx
-			// if (boyfriend.holdTimer > Conductor.stepCrochet * 4 * 0.001 && !up && !down && !right && !left)
-			// {
-			// 	if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
-			// 	{
-			// 		boyfriend.playAnim('idle');
-			// 	}
-			// }
+			if (boyfriend.holdTimer > Conductor.stepCrochet * 4 * 0.001 && !up && !down && !right && !left)
+			{
+				if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+				{
+					boyfriend.playAnim('idle');
+				}
+			}
 	
 			playerStrums.forEach(function(spr:FlxSprite)
 			{
@@ -2521,12 +2525,12 @@ class PlayState extends MusicBeatState
 
 	function updateAccuracy()
 	{
-		if (misses > 0 || accuracy < 96)
+		if (misses > 0)
 			fc = false;
 		else
 			fc = true;
 		
-		totalPlayed += 1;
+		totalPlayed += 100;
 
 		accuracy = totalNotesHit / totalPlayed * 100;
 	}

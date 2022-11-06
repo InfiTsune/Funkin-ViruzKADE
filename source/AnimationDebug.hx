@@ -12,7 +12,7 @@ import flixel.util.FlxColor;
 /**
 	*DEBUG MODE
  */
-class AnimationDebug extends FlxState
+class AnimationDebug extends MusicBeatState
 {
 	var bf:Boyfriend;
 	var dad:Character;
@@ -167,6 +167,13 @@ class AnimationDebug extends FlxState
 		var rightP = FlxG.keys.anyJustPressed([RIGHT]);
 		var downP = FlxG.keys.anyJustPressed([DOWN]);
 		var leftP = FlxG.keys.anyJustPressed([LEFT]);
+
+		var BACK = controls.BACK;
+
+		if (BACK)
+		{
+			LoadingState.loadAndSwitchState(new PlayState(), true);
+		}
 
 		var holdShift = FlxG.keys.pressed.SHIFT;
 		var multiplier = 1;

@@ -96,8 +96,6 @@ class OptionsMenu extends MusicBeatState
 			FlxG.save.data.offset--;
 		}
 
-		versionShit.text = "Offset (Left, Right): " + FlxG.save.data.offset;
-
 		if (controls.ACCEPT)
 		{
 			if (curSelected == 0)
