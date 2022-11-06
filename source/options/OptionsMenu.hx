@@ -64,7 +64,7 @@ class OptionsMenu extends MusicBeatState
 
 		sussyDescription = new FlxText(5, FlxG.height - 30, 0, 'Description: ' + descOpt[curSelected], 20);
 		sussyDescription.scrollFactor.set();
-		sussyDescription.setFormat(Paths.font("pineappleDays.ttf"), 15, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FLxColor.BLACK);
+		sussyDescription.setFormat(Paths.font("pineappleDays.ttf"), 15, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(sussyDescription);
 
 		changeSelection();
@@ -100,7 +100,7 @@ class OptionsMenu extends MusicBeatState
 
 		if (controls.ACCEPT)
 		{
-			if (curSelected = 0)
+			if (curSelected == 0)
 				FlxG.switchState(new ControlMenu());
 		}
 	}

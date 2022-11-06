@@ -59,13 +59,18 @@ class DiscordClient
 		trace("Discord Client initialized");
 	}
 
-	public static function changePresence(details:String, state:Null<String>, largeImage:String, ?smallImageKey : String, ?hasStartTimestamp : Bool, ?endTimestamp: Float)
+	public static function changePresence(details:String, state:Null<String>, ?largeImage : String, ?smallImageKey : String, ?hasStartTimestamp : Bool, ?endTimestamp: Float)
 	{
 		var startTimestamp:Float = if(hasStartTimestamp) Date.now().getTime() else 0;
 
 		if (endTimestamp > 0)
 		{
 			endTimestamp = startTimestamp + endTimestamp;
+		}
+
+		if (largeImage == null)
+		{
+			largeImage = 'img1';
 		}
 
 		DiscordRpc.presence({
