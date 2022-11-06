@@ -1,4 +1,4 @@
-package;
+package options;
 
 import Controls.KeyboardScheme;
 import Controls.Control;
@@ -18,10 +18,15 @@ class OptionsMenu extends MusicBeatState
 	var selector:FlxText;
 	var curSelected:Int = 0;
 
-	var controlsStrings:Array<String> = ['Controls', 'Preferences', 'Misc'];
+	var controlsStrings:Array<String> = 
+	[
+		'Controls', 
+		'Preferences', 
+		'Misc'
+	];
 	var descOpt:Array<String> = ['Change Key Binds', 'Change the options of the game in general', 'Change things inside the game'] ;
 
-	var sussyDescription:Alphabet;
+	var sussyDescription:FlxText;
 
 	private var grpControls:FlxTypedGroup<Alphabet>;
 	var versionShit:FlxText;
@@ -52,10 +57,15 @@ class OptionsMenu extends MusicBeatState
 		}
 
 
-		versionShit = new FlxText(5, FlxG.height - 18, 0, "Offset (Left, Right): " + FlxG.save.data.offset, 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
+		// versionShit = new FlxText(5, FlxG.height - 18, 0, "Offset (Left, Right): ", 12);
+		// versionShit.scrollFactor.set();
+		// versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		// add(versionShit);
+
+		sussyDescription = new FlxText(5, FlxG.height - 30, 0, 'Description: ' + descOpt[curSelected], 20);
+		sussyDescription.scrollFactor.set();
+		sussyDescription.setFormat(Paths.font("pineappleDays.ttf"), 15, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FLxColor.BLACK);
+		add(sussyDescription);
 
 		changeSelection();
 
@@ -90,49 +100,8 @@ class OptionsMenu extends MusicBeatState
 
 		if (controls.ACCEPT)
 		{
-			// if (curSelected != 5)
-			// grpControls.remove(grpControls.members[curSelected]);
-			// switch(curSelected)
-			// {
-			// 	case 0:
-			// 		FlxG.save.data.dfjk = !FlxG.save.data.dfjk;
-			// 		var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.dfjk ? 'DFJK' : 'WASD'), true, false);
-			// 		ctrl.isMenuItem = true;
-			// 		ctrl.targetY = curSelected;
-			// 		grpControls.add(ctrl);
-			// 		if (FlxG.save.data.dfjk)
-			// 			controls.setKeyboardScheme(KeyboardScheme.Solo, true);
-			// 		else
-			// 			controls.setKeyboardScheme(KeyboardScheme.Duo(true), true);
-					
-			// 	case 1:
-			// 		FlxG.save.data.newInput = !FlxG.save.data.newInput;
-			// 		var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "New input" : "Old Input"), true, false);
-			// 		ctrl.isMenuItem = true;
-			// 		ctrl.targetY = curSelected - 1;
-			// 		grpControls.add(ctrl);
-			// 	case 2:
-			// 		FlxG.save.data.downscroll = !FlxG.save.data.downscroll;
-			// 		var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.downscroll ? 'Downscroll' : 'Upscroll'), true, false);
-			// 		ctrl.isMenuItem = true;
-			// 		ctrl.targetY = curSelected - 2;
-			// 		grpControls.add(ctrl);
-			// 	case 3:
-			// 		FlxG.save.data.accuracyDisplay = !FlxG.save.data.accuracyDisplay;
-			// 		var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Accuracy " + (!FlxG.save.data.accuracyDisplay ? "off" : "on"), true, false);
-			// 		ctrl.isMenuItem = true;
-			// 		ctrl.targetY = curSelected - 3;
-			// 		grpControls.add(ctrl);
-			// 	case 4:
-			// 		FlxG.save.data.songPosition = !FlxG.save.data.songPosition;
-			// 		var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "Song Position " + (!FlxG.save.data.songPosition ? "off" : "on"), true, false);
-			// 		ctrl.isMenuItem = true;
-			// 		ctrl.targetY = curSelected - 4;
-			// 		grpControls.add(ctrl);
-			// 	case 5:
-			// 		trace('switch');
-			// 		FlxG.switchState(new LoadReplayState());
-			// }
+			if (curSelected = 0)
+				FlxG.switchState(new ControlMenu());
 		}
 	}
 
@@ -149,6 +118,7 @@ class OptionsMenu extends MusicBeatState
 		if (curSelected >= grpControls.length)
 			curSelected = 0;
 
+		sussyDescription.text = 'Description: ' + descOpt[curSelected];
 		// selector.y = (70 * curSelected) + 30;
 
 		var bullShit:Int = 0;
