@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Rogelio_Assets.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Rogelio Down0000" x="0" y="0" width="251" height="360" frameX="-4" frameY="-7" frameWidth="256" frameHeight="368"/>
+	<SubTexture name="Rogelio Down0001" x="0" y="0" width="251" height="360" frameX="-4" frameY="-7" frameWidth="256" frameHeight="368"/>
+	<SubTexture name="Rogelio Down0002" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0003" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0004" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0005" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0006" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0007" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0008" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0009" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0010" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0011" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0012" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0013" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio Down0014" x="281" y="0" width="256" height="368"/>
+	<SubTexture name="Rogelio IDLE0000" x="567" y="0" width="262" height="402" frameX="-2" frameY="-16" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0001" x="567" y="0" width="262" height="402" frameX="-2" frameY="-16" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0002" x="859" y="0" width="266" height="404" frameX="0" frameY="-15" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0003" x="859" y="0" width="266" height="404" frameX="0" frameY="-15" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0004" x="1155" y="0" width="264" height="411" frameX="-5" frameY="-8" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0005" x="1155" y="0" width="264" height="411" frameX="-5" frameY="-8" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0006" x="1449" y="0" width="244" height="417" frameX="-16" frameY="-2" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0007" x="1449" y="0" width="244" height="417" frameX="-16" frameY="-2" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0008" x="1723" y="0" width="244" height="419" frameX="-13" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0009" x="1723" y="0" width="244" height="419" frameX="-13" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0010" x="1723" y="0" width="244" height="419" frameX="-13" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0011" x="1723" y="0" width="244" height="419" frameX="-13" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0012" x="1723" y="0" width="244" height="419" frameX="-13" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0013" x="1723" y="0" width="244" height="419" frameX="-13" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0014" x="0" y="449" width="241" height="402" frameX="-34" frameY="-16" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0015" x="0" y="449" width="241" height="402" frameX="-34" frameY="-16" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0016" x="271" y="449" width="240" height="404" frameX="-31" frameY="-15" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0017" x="271" y="449" width="240" height="404" frameX="-31" frameY="-15" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0018" x="541" y="449" width="242" height="411" frameX="-30" frameY="-8" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0019" x="541" y="449" width="242" height="411" frameX="-30" frameY="-8" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0020" x="813" y="449" width="244" height="417" frameX="-20" frameY="-2" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0021" x="813" y="449" width="244" height="417" frameX="-20" frameY="-2" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0022" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0023" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0024" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0025" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0026" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0027" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio IDLE0028" x="1087" y="449" width="244" height="419" frameX="-16" frameY="0" frameWidth="275" frameHeight="419"/>
+	<SubTexture name="Rogelio Left Sing0000" x="1361" y="449" width="275" height="417" frameX="-2" frameY="-1" frameWidth="277" frameHeight="418"/>
+	<SubTexture name="Rogelio Left Sing0001" x="1361" y="449" width="275" height="417" frameX="-2" frameY="-1" frameWidth="277" frameHeight="418"/>
+	<SubTexture name="Rogelio Left Sing0002" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0003" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0004" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0005" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0006" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0007" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0008" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Left Sing0009" x="1666" y="449" width="277" height="418"/>
+	<SubTexture name="Rogelio Right Sing0000" x="0" y="898" width="321" height="415" frameX="0" frameY="0" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0001" x="0" y="898" width="321" height="415" frameX="0" frameY="0" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0002" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0003" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0004" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0005" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0006" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0007" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0008" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio Right Sing0009" x="351" y="898" width="320" height="412" frameX="-6" frameY="-3" frameWidth="326" frameHeight="415"/>
+	<SubTexture name="Rogelio UP Sing0000" x="701" y="898" width="242" height="446" frameX="-3" frameY="0" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0001" x="701" y="898" width="242" height="446" frameX="-3" frameY="0" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0002" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0003" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0004" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0005" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0006" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0007" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0008" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0009" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0010" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0011" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0012" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0013" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+	<SubTexture name="Rogelio UP Sing0014" x="973" y="898" width="247" height="438" frameX="0" frameY="-8" frameWidth="247" frameHeight="446"/>
+</TextureAtlas>
