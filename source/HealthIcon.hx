@@ -17,6 +17,8 @@ class HealthIcon extends FlxSprite
 
 		this.oneFrame = oneFrame;
 
+		var one:Bool = false;
+
 		// por mientras
 		if (sprTracker != null && char == 'gf')
 		{
@@ -25,25 +27,24 @@ class HealthIcon extends FlxSprite
 		if (sprTracker != null && (char == 'bf-pixel' || char == 'senpai' || char == 'senpai-angry' || char == 'spirit'))
 		{
 			pixel = true;
+			one = true;
 		}
 
 		var _sourceIcon:String;
-		if (!oneFrame || !pixel)
-		{
-			_sourceIcon = 'viruz/icons/$char-icon';
-		}
-		else if (pixel)
+		_sourceIcon = 'viruz/icons/$char-icon';
+
+		if (pixel)
 		{
 			_sourceIcon = 'viruz/icons/$char-pixel-icon';
 		}
-		else
+		if (oneFrame)
 		{
 			_sourceIcon = 'viruz/icons/$char-one-icon';
 		}
 
 		if (OpenFlAssets.exists(_sourceIcon + '.png', IMAGE))
 		{
-			if (!oneFrame) 
+			if (!oneFrame || !one) 
 			{
 				loadGraphic(Paths.image(_sourceIcon), true, 150, 150);
 				animation.add('default', [0], 0, false, isPlayer);

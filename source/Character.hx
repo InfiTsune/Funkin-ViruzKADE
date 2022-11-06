@@ -182,7 +182,7 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * 1.2));
 
-				playAnim("danceLeft");
+				playAnim("idleLeft");
 			case 'mom':
 				tex = Paths.getSparrowAtlas('Mom_Assets');
 				frames = tex;
